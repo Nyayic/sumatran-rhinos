@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/form.css">
     
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
@@ -31,7 +33,7 @@
 
   <div id="overlayer"></div>
   <div class="loader">
-    <div class="spinner-border text-primary" role="status">
+    <div class="spinner-border text-success" role="status">
       <span class="sr-only">Loading...</span>
     </div>
   </div>
@@ -57,7 +59,7 @@
           <div class="col-6 col-xl-2">
             <h1 class="mb-0 site-logo">
               <a href="index.html" class="h2 mb-0">
-              <strong>Sumatran</strong><span class="text-primary">Rhino.</span> 
+              <strong>Sumatran</strong><span class="text-success">Rhino.</span> 
               </a>
             </h1>
           </div>
@@ -95,11 +97,35 @@
         <div class="row">
           <div class="col-md-5 mr-auto align-self-center text-center text-md-left">
             <div class="intro-text">
-              <h2>Find your Inner <span class="text-primary">Sumatran</span>  Rhino</h2>
+              <h2>Find your Inner <span class="text-success">Sumatran</span>  Rhino</h2>
               <p class="mb-4">
                 Would you live in the grasslands  like a Rhino? Answer these 8 fun questions about your 
                 personality and interests to discover the one Sumatran Rhino that you relate to most.</p>
-              <p><a href="#" class="btn btn-primary">Play Game</a></p>
+              
+                <!-- Large modal -->
+                <!-- Small modal -->
+                <input type="button" class="btn btn-outline-success" data-toggle="modal" data-target=".bd-example-modal-sm" value="Play Game">
+
+                <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h5>Continue with your email</h5>
+                          </div>
+                          <form action="" id="start-form">
+                              <div class="form-group">
+                                  <label for="email"> Email :</label>
+                                  <input type="email" class="form-control" placeholder="Enter your email address" required>
+                                </div>
+                                <div class="form-group">
+                                  <input type="submit" class="btn btn btn-outline-success" value="Continue">
+                                </div>
+                          </form>
+                          
+                    </div>
+                  </div>
+                </div>
+                  <!--input type="submit" class="btn btn-outline-success offset-3 play-btn" value="Play game"-->
             </div>
           </div>
           <div class="col-md-5 align-self-center text-center text-md-right">
